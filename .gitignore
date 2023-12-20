@@ -1,0 +1,23 @@
+# Files
+*.db
+*.log
+*.md
+*.xml
+*.class
+*.json
+*.iml
+*.lock
+*.sync
+
+# But not
+!pom.xml
+!src/test/resources/testng.xml
+!config.properties
+
+# Folders
+bin/
+target/
+.idea/
+.gradle/
+scr/target/
+build/
