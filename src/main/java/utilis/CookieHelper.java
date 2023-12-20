@@ -5,6 +5,7 @@ import org.openqa.selenium.*;
 import java.util.*;
 import java.util.stream.*;
 
+import static com.codeborne.selenide.Selenide.refresh;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class CookieHelper {
@@ -14,6 +15,7 @@ public class CookieHelper {
 
     public static void addCookie(Cookie cookie) {
         getWebDriver().manage().addCookie(cookie);
+        refresh();
     }
 
     public static Map<String, String> getCookiesMap() {
