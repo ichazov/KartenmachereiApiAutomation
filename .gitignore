@@ -8,6 +8,7 @@
 *.iml
 *.lock
 *.sync
+creds.properties
 
 # But not
 !pom.xml
