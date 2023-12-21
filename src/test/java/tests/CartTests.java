@@ -50,7 +50,8 @@ public class CartTests extends BaseTest {
 
     @Test
     public void addProductToCartTest() {
-        executeBasicSteps(getSessionValue());
+        executeBasicSteps();
+        CookieHelper.addCookie(CookieHelper.provideSessionCookie(getSessionValue()));
 
         Map<String, String> cookies = CookieHelper.getCookiesMap();
 
@@ -81,7 +82,8 @@ public class CartTests extends BaseTest {
 
     @Test(dependsOnMethods = {"addProductToCartTest"})
     public void removeItemFromCartTest() {
-        executeBasicSteps(getSessionValue());
+        executeBasicSteps();
+        CookieHelper.addCookie(CookieHelper.provideSessionCookie(getSessionValue()));
 
         given().spec(requestSpec)
                 .basePath("/customcheckout/ajax")
