@@ -85,6 +85,6 @@ public class WishListTests extends BaseTest {
                 .post("/remove")
                 .then()
                 .body("code", equalTo("ok"))
-                .body("count", equalTo(""));
+                .body("wishlistCount", equalTo(""));
     }
 }
