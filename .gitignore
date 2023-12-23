@@ -1,4 +1,4 @@
-# Files
+# Files:
 *.db
 *.log
 *.md
@@ -10,15 +10,17 @@
 *.sync
 creds.properties
 
-# But not
-!pom.xml
-!src/test/resources/testng.xml
-!config.properties
-
-# Folders
+# Folders:
 bin/
 target/
 .idea/
 .gradle/
 scr/target/
 build/
+
+# But not:
+# Files:
+!pom.xml
+!config.properties
+# Folders:
+!src/test/resources/*.xml

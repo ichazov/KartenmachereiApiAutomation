@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="AllTests">
+    <test name="CartTests">
+        <classes>
+            <class name="tests.CartTests">
+                <methods>
+                    <include name="removeItemFromCartTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="UserAccountTests">
+        <classes>
+            <class name="tests.UserAccountTests">
+                <methods>
+                    <include name="invalidCredentialsLogInTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="WishListTests">
+        <classes>
+            <class name="tests.WishListTests">
+                <methods>
+                    <include name="removeItemFromWishlistTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
